@@ -70,3 +70,38 @@ button {
 .hidden {
   display: none;
 }
+
+/* ===== Адаптація під телефони ===== */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;          /* займає майже весь екран */
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 20px;     /* трохи менший шрифт */
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  img {
+    width: 150px;        /* менший gif для мобільних */
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #yesBtn {
+    left: calc(50% - 60px);
+  }
+
+  #noBtn {
+    left: calc(50% + 60px);
+  }
+}
